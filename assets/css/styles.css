@@ -123,3 +123,7 @@ label{font-weight:700;color:#f0f0f0}
 /* About hero video (full-width background) */
 .about-hero .content{position:relative;z-index:2}
 .about-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.72));}
+
+
+/* Services hero video (full-width background) */
+.services-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.72));}

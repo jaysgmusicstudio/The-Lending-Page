@@ -22,3 +22,14 @@ if ('IntersectionObserver' in window && revealEls.length){
 } else {
   revealEls.forEach(el=>el.classList.add('in-view'));
 }
+
+// Mobile nav toggle
+(function(){
+  const btn = document.querySelector('.nav-toggle');
+  if(btn){
+    btn.addEventListener('click', ()=>{
+      document.body.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', document.body.classList.contains('nav-open') ? 'true' : 'false');
+    });
+  }
+})();
